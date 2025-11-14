@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCart - Modern E-Commerce Portal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">NovaCart</h1>
+
+    <!-- Dark Mode Button -->
+    <button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <h2>Shop Smart. Shop Fast.</h2>
+    <p>Discover premium gadgets and accessories at unbeatable prices.</p>
+</section>
+
+<!-- Search Bar -->
+<div class="search-container">
+    <input type="text" id="searchBox" placeholder="Search for a product...">
+</div>
+
+<!-- Product Section -->
+<section id="products">
+    <h2>Featured Products</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/150">
+            <h3>Smartphone</h3>
+            <p class="price">₹24,999</p>
+            <p class="rating">★★★★☆</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/150">
+            <h3>Wireless Earbuds</h3>
+            <p class="price">₹1,499</p>
+            <p class="rating">★★★★★</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/150">
+            <h3>Gaming Laptop</h3>
+            <p class="price">₹59,999</p>
+            <p class="rating">★★★★☆</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Register -->
+<section id="register">
+    <h2>User Registration</h2>
+    <form id="regForm" onsubmit="return validateRegister()">
+        <input type="text" id="regName" placeholder="Full Name">
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPass" placeholder="Password">
+        <button type="submit">Register</button>
+    </form>
+    <p id="regMsg"></p>
+</section>
+
+<!-- Login -->
+<section id="login">
+    <h2>User Login</h2>
+    <form id="loginForm" onsubmit="return validateLogin()">
+        <input type="email" id="logEmail" placeholder="Email">
+        <input type="password" id="logPass" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+    <p id="logMsg"></p>
+</section>
+
+<!-- Orders / Wishlist -->
+<section id="extras">
+    <h2>Your Activity</h2>
+
+    <h3>Orders</h3>
+    <ul>
+        <li>#1221 - Smartphone - Delivered</li>
+        <li>#1231 - Earbuds - In Transit</li>
+    </ul>
+
+    <h3>Wishlist</h3>
+    <ul>
+        <li>Smartwatch</li>
+        <li>Mechanical Keyboard</li>
+    </ul>
+
+    <h3>Customer Reviews</h3>
+    <p>“Amazing quality products. Highly recommended!”</p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Customer Care</h2>
+    <p>Email: support@novacart.com</p>
+    <p>Helpline: 1800-555-900</p>
+    <p>Report Issue: report@novacart.com</p>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2>About NovaCart</h2>
+    <p>NovaCart is a modern e-commerce platform offering electronics and lifestyle products with fast delivery and premium support.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 NovaCart. All rights reserved.</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
